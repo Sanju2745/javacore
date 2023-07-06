@@ -1,0 +1,7 @@
+Design a Elevator System using OOPS
+Practice all the standard coding conventions.
+0 - 5  MAX 9 (0-9)
+1 second stopage at each floor Thread.sleep(1000);
+
+Choose which collection to use.
+!!Avoid use MT

@@ -1,0 +1,217 @@
+Java 
+
+Latest JDK --> JDK 19
+
+Java Development Kit = JVM + JRE* + Dev tools
+JRE ---> Java Runtime Environment
+
+To run any app on laptop, Do you need an OS? : Yes
+To run any Java app ,you also need a JRE.
+
+
+
+Oracle, *Adoptium (FREE), GRAAL, Coretto are soem popular vendors of Java
+1.4 
+1.5
+1.6
+1.7
+1.8*  JDK 8 .....2015
+9 JDK 9
+10  JDK 10
+11*
+17*
+"*" are LTS versions (Long Term Support)
+We will study JDK 8
+
+Software Required:
+* JDK 8 and 11
+* Eclipse (needs JDK 11 also)
+* Notepad ++
+
+Running our 1st Java code
+------------------------------------------------------
+PS C:\Users\suman\OneDrive\Desktop> java -version
+openjdk version "1.8.0_345"
+OpenJDK Runtime Environment (Temurin)(build 1.8.0_345-b01)
+OpenJDK 64-Bit Server VM (Temurin)(build 25.345-b01, mixed mode)
+PS C:\Users\suman\OneDrive\Desktop> ls
+
+    Directory: C:\Users\suman\OneDrive\Desktop
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+l-r--          04-03-2023    13:57                Creator
+lar--          22-02-2023    13:30                Shortcuts
+la---          06-12-2022    00:20           2659 Google Meet.lnk
+-a---          04-03-2023    21:16            102 Main.java
+
+PS C:\Users\suman\OneDrive\Desktop> javac .\Main.java
+PS C:\Users\suman\OneDrive\Desktop> ls
+
+    Directory: C:\Users\suman\OneDrive\Desktop
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+l-r--          04-03-2023    13:57                Creator
+lar--          22-02-2023    13:30                Shortcuts
+la---          06-12-2022    00:20           2659 Google Meet.lnk
+-a---          04-03-2023    21:18            413 Main.class
+-a---          04-03-2023    21:16            102 Main.java
+
+PS C:\Users\suman\OneDrive\Desktop> java Main
+Hello World
+PS C:\Users\suman\OneDrive\Desktop>
+
+
+Main.java  ----- javac Main.java (Compiling)------> Main.class (Intermediate Code/ Byte code/ Class file)
+Main.class ----- java Main -----(Running )----> Hello World
+
+EDITOR
+Notepad ++ | VS Code | Sublime | Fleet
+
+IDE Integrated Dev Environment ~~~~~~
+Usually Language Specific and VERY VERY powerful
+
+IDEs for Java ----> Eclipse (FREE)*, IntelliJ Idea
+We will us Eclipse
+
+-----------------------------Packages ------------------------------------------
+Packages are folder kind of structures which is used to organize Java classes properly.
+Further It can also be used to control access.
+
+yhills.com
+com.yhills.basics
+
+
+OOP - Object Oriented Programming
+Object are all the real world entities
+They have 2 parts, has and does
+
+has - deals with properties of the object (instance variables)
+does = deals with the functionality of the object (methods)
+
+-----------------------------Strings ------------------------------------------
+
+Strings are a sequence of characters
+String is a object in Java
+
+- Immutable
+	String literal
+	new Keyword
+
+- Mutable(recommended when you are making two many changes to the original string)
+	StringBuilder
+	StringBuffer
+
+
+------------------------------- Battle of Strings ------------------------------------------
+
+String (Immutable)
+Time : 7.508,988,500
+
+String (Mutable)
+Time : 008,280,300
+
+
+------------------------------- Pascal Triangle ------------------------------------------
+
+			1
+		1		1
+	1		2		1
+1		3		3		1
+
+
+1. First Draw the Structure then the data of Pascal
+
+
+Factorial:
+4! = 4 * 3 * 2 * 1
+3! = 6
+0! = 1
+
+Combination:
+Say we have 6 stuffs ==> A B C D E F
+We have to select any 3
+
+Few combinations will be 
+ A B C
+ D E F
+ C E F
+ C A B ---> cannot be a combination as ABC is already taken into account
+
+So the formula for total number of combination is iCj  
+where i is number of objects i.e.(6)
+and j is the selection number i.e. (3)
+
+iCj   = (i!) / (i - j)! * j!
+
+0C0 = 2
+2C1  = 2!  / 1!  * 1! = 2
+3C2 = 3! / 2! * 1! = 3
+
+So, 6C3 will be = 6! / (3! * (6-3)!) =  20
+
+The Pascal triangle data is based on this concept only
+
+
+--------------------------------- Arrays  ------------------------------------------
+
+
+--------------------------------- Exception ------------------------------------------
+try catch
+try catch catch catch
+try catch catch catch finally
+try finally
+try with resource
+try with resource without catch
+
+--------------------------------- IO ------------------------------------------
+
+File and Folders
+Almost every file has a extension (Extesion tells the OS the file type)
+
+file extension are generally of 3 or 4 charaters
+
+file extension should not excced 3 characters ancient OS
+.txt
+.mp4
+.png
+.mp3
+.avi
+.dat
+.xml
+
+Modern OS supports any length of character in extension
+.json
+.yaml
+
+.html
+.htm
+
+.jpg
+.jpeg
+
+File Path:  C:\Users\suman\eclipse-workspace\JavaB5\src\notes\sample.txt
+
+
+
+Serialization:
+
+Marker Inteerface : 0 abstract methods
+Student (is its Serializable ?) YES
+class CollegeStudent extends Student  -----> Automatically be serializable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
